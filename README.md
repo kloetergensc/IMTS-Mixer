@@ -11,7 +11,7 @@ https://github.com/usail-hkust/t-PatchGNN.
 The datasets Activity and USHCN are provided within this repo and can be used out-of-the-box, while
 PhysioNet will be automatically downloaded and preprocessed, when running the code with the respecitve dataset for the first time.
 
-The MIMIC dataset, is under the PhysioNet Credentialed Health Data License, which is why it cannot be included in the repo. Please follow the instructions provided here: https://github.com/usail-hkust/t-PatchGNN in order to obtain the MIMIC dataset.
+The MIMIC dataset is under the PhysioNet Credentialed Health Data License, which is why it cannot be included in the repo. Please follow the instructions provided here: https://github.com/usail-hkust/t-PatchGNN in order to obtain the MIMIC dataset.
 
 # Requirements
 To run the code, we recommend creating a fresh environment. For our experiments we used Python 3.11
