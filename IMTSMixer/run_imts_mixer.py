@@ -32,17 +32,7 @@ parser.add_argument("--logmode", type=str, default="a", help="File mode of loggi
 
 parser.add_argument("--lr", type=float, default=0.01, help="Starting learning rate.")
 parser.add_argument("--w_decay", type=float, default=0.0001, help="weight decay.")
-parser.add_argument("-b", "--batch_size", type=int, default=64)
-
-parser.add_argument(
-    "--save", type=str, default="experiments/", help="Path for save checkpoints"
-)
-parser.add_argument(
-    "--load",
-    type=str,
-    default=None,
-    help="ID of the experiment to load for evaluation. If None, run a new experiment.",
-)
+parser.add_argument("-b", "--batch_size", type=int, default=32)
 parser.add_argument("--seed", type=int, default=1, help="Random seed")
 parser.add_argument(
     "--dataset",
@@ -101,10 +91,8 @@ print(args)
 
 if __name__ == "__main__":
     utils.setup_seed(args.seed)
-    experimentID = args.load
-    if experimentID is None:
-        # Make a new experiment ID
-        experimentID = int(SystemRandom().random() * 100000)
+    # Make a new experiment ID
+    experimentID = int(SystemRandom().random() * 100000)
 
     input_command = sys.argv
     ind = [i for i in range(len(input_command)) if input_command[i] == "--load"]
