@@ -18,8 +18,9 @@ Our experiments follow the setup in [1], reusing the raw data and preprocessing 
   - `PhysioNet`: Automatically downloaded and preprocessed on first run
 
 - **Not included**:  
-  - `MIMIC`: Licensed under the PhysioNet Credentialed Health Data License.  
-    To obtain it, follow the instructions in the [t-PatchGNN repo](https://github.com/usail-hkust/t-PatchGNN).
+  - `MIMIC`: Licensed under the PhysioNet Credentialed Health Data License.
+  However, there is a preprocessed version of the dataset available here:
+  https://physionet.org/content/mimic-iii-ext-tpatchgnn/1.0.0/ (available only for credentialed PhysioNet users.)
 
 ---
 
