@@ -1,7 +1,7 @@
 # IMTS-Mixer
 
 Official implementation of the paper:  
-**"IMTS-Mixer: Mixer Networks for Irregular Multivariate Time Series Forecasting"**, submitted to **SIGKDD 2025**.
+**"IMTS-Mixer: Mixer Networks for Irregular Multivariate Time Series Forecasting"**, submitted to **AAAI 2026**.
 
 <div align="center">
   <img src="./figures/imtsmixer.png" alt="IMTS-Mixer Architecture" width="600"/>
