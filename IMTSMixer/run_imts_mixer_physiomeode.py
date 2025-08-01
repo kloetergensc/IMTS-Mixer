@@ -13,8 +13,10 @@ import torch
 from schedulefree import AdamWScheduleFree
 from torch import Tensor, jit
 
+sys.path.append("../")
+
 from lib.tsdm_collate import tsdm_collate
-from lib.utils_physiome import get_data_loaders
+from lib.utils_physiome import IMTS_dataset, get_data_loaders
 
 # fmt: off
 parser = argparse.ArgumentParser(description="Training Script for USHCN dataset.")
@@ -63,7 +65,7 @@ if ARGS.config is not None:
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(DEVICE)
 
-model_path = "saved_models/" + "IMTSMix" + ARGS.dataset + "_" + str(experiment_id) + ".h5"
+model_path = "../Physiome-ODE/saved_models/" + "IMTSMix" + ARGS.dataset + "_" + str(experiment_id) + ".h5"
 os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 torch.backends.cuda.matmul.allow_tf32 = True
 torch.backends.cudnn.allow_tf32 = True
