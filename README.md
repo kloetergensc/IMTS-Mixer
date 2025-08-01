@@ -5,7 +5,8 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 Official implementation of the paper:  
-**"IMTS-Mixer: Mixer Networks for Irregular Multivariate Time Series Forecasting"**, submitted to **AAAI 2026**.
+**Mixing It Up: Exploring Mixer Networks for Irregular Multivariate Time Series Forecasting**, 
+submitted to **AAAI 2026**.
 
 <div align="center">
   <img src="figures/imtsmixer.png" alt="IMTS-Mixer Architecture" width="600"/>
