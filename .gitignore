@@ -1,4 +1,5 @@
 *.log
 */__pycache__/*
 data/
-Physiome-ODE/
+Physiome-ODE/final/*
+Physiome-ODE/saved_models/*
