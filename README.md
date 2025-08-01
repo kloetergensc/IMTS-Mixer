@@ -201,9 +201,9 @@ To conduct ablation studies as discussed in the paper, you can modify the `--mod
 | Model | Description | Parameter Value |
 |-------|-------------|-----------------|
 | **IMTS-Mixer** | Full proposed model (default) | `imtsmixer` or any other value |
-| **MLP Baseline** | Multi-layer perceptron baseline | `mlp` |
-| **Attention Baseline** | Attention-based baseline | `attn` |
-| **TTCN Baseline** | Temporal convolutional network baseline | `ttcn` |
+| **MLP Baseline** | MLP- temporal projection | `mlp` |
+| **Attention Baseline** | Replace ISCAM with MHA | `attn` |
+| **TTCN Baseline** | Replace ISCAM with TTCN | `ttcn` |
 
 ### Running Ablation Studies
 
