@@ -1,7 +1,6 @@
 import argparse
 import datetime
 import os
-import random
 import sys
 import time
 from random import SystemRandom

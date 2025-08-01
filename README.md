@@ -41,20 +41,21 @@ To reproduce the results on various datasets, use the following commands and add
 
 ```bash
 # PhysioNet
-python run_imts_mixer.py --D 64 --D_dec 128 --mixer-blocks 2 --w_decay 0.01 --lr 0.01 --patience 20 --dataset physionet --history 24 -b 32
+python run_imts_mixer_pmau.py --D 64 --D_dec 128 --mixer-blocks 2 --w_decay 0.01 --lr 0.01 --patience 20 --dataset physionet --history 24 -b 32
 
 # MIMIC
-python run_imts_mixer.py --D 64 --D_dec 128 --mixer-blocks 3 --w_decay 0.001 --lr 0.01 --patience 20 --dataset mimic --history 24 -b 32
+python run_imts_mixer_pmau.py --D 64 --D_dec 128 --mixer-blocks 3 --w_decay 0.001 --lr 0.01 --patience 20 --dataset mimic --history 24 -b 32
 
 # Human Activity
-python run_imts_mixer.py --D 64 --D_dec 128 --mixer-blocks 2 --w_decay 0.0001 --lr 0.01 --patience 20 --dataset activity --history 3000 -b 32
+python run_imts_mixer_pmau.py --D 64 --D_dec 128 --mixer-blocks 2 --w_decay 0.0001 --lr 0.01 --patience 20 --dataset activity --history 3000 -b 32
 
 # USHCN
-python run_imts_mixer.py --D 64 --D_dec 128 --mixer-blocks 2 --w_decay 0.0001 --lr 0.01 --patience 20 --dataset ushcn --history 24 -b 32
+python run_imts_mixer_pmau.py --D 64 --D_dec 128 --mixer-blocks 2 --w_decay 0.0001 --lr 0.01 --patience 20 --dataset ushcn --history 24 -b 32
 ```
 
+## Physiome-ODE
 
-
+To reproduce the result for the Physiome-ODE[2] dataset 
 
 ## 📚 Reference
 [1] Zhang, W., Yin, C., Liu, H., Zhou, X., & Xiong, H. (2024).
