@@ -22,6 +22,25 @@ IMTS-Mixer is a novel approach for forecasting irregular multivariate time serie
 - Easy-to-use implementation with comprehensive examples
 - Support for multiple datasets including PhysioNet, MIMIC, Human Activity, and USHCN
 
+## 📁 Project Structure
+
+```
+IMTS-Mixer/
+├── Ablation studies/           # Ablations as discussed in the paper
+├── data/                       # Dataset storage (Physionet, MIMIC, Activity, USHCN)
+├── figures/                    # Architecture and result figures
+├── IMTS-Mixer/
+│   ├── model/                  # Model implementations
+│   ├── run_imts_mixer_pmau.py  # Main training script
+│   └── run_imts_mixer_physiomeode.py  # Physiome-ODE experiments
+├── lib/                        # Utility functions (data loading, preprocessing, etc.)
+├── Physiome-ODE/
+│   ├── final/                  # Store the Physiome-ODE datasets here
+│   └── saved_models/           # During training on Physiome-ODE checkpoints will be saved here
+├── README.md                   # This file
+└── requirements.txt            # Dependencies
+```
+
 ## 📊 Datasets
 
 Our experiments follow the setup established in [1], reusing the raw data and preprocessing code from the official [t-PatchGNN repository](https://github.com/usail-hkust/t-PatchGNN).
@@ -173,23 +192,35 @@ python run_imts_mixer_physiomeode.py \
   --fold 0
 ```
 
-## 📁 Project Structure
+## 🔬 Ablation Studies
 
-```
-IMTS-Mixer/
-├── Ablation studies/           # Ablations as discussed in the paper
-├── data/                       # Dataset storage (Physionet, MIMIC, Activity, USHCN)
-├── figures/                    # Architecture and result figures
-├── IMTS-Mixer/
-│   ├── model/                  # Model implementations
-│   ├── run_imts_mixer_pmau.py  # Main training script
-│   └── run_imts_mixer_physiomeode.py  # Physiome-ODE experiments
-├── lib/                        # Utility functions (data loading, preprocessing, etc.)
-├── Physiome-ODE/
-│   ├── final/                  # Store the Physiome-ODE datasets here
-│   └── saved_models/           # During training on Physiome-ODE checkpoints will be saved here
-├── README.md                   # This file
-└── requirements.txt            # Dependencies
+To conduct ablation studies as discussed in the paper, you can modify the `--model` parameter in the main training script. The following model variants are available:
+
+### Available Models
+
+| Model | Description | Parameter Value |
+|-------|-------------|-----------------|
+| **IMTS-Mixer** | Full proposed model (default) | `imtsmixer` or any other value |
+| **MLP Baseline** | Multi-layer perceptron baseline | `mlp` |
+| **Attention Baseline** | Attention-based baseline | `attn` |
+| **TTCN Baseline** | Temporal convolutional network baseline | `ttcn` |
+
+### Running Ablation Studies
+
+```bash
+# Run with MLP baseline
+python run_imts_mixer_pmau.py \
+  --D 64 \
+  --D_dec 256 \
+  --mixer-blocks 1 \
+  --w_decay 0.0001 \
+  --lr 0.01 \
+  --patience 20 \
+  --dataset ushcn \
+  --history 24 \
+  -b 32 \
+  --seed 0 \
+  --model ttcn
 ```
 
 
