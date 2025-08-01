@@ -55,9 +55,19 @@ python run_imts_mixer_pmau.py --D 64 --D_dec 128 --mixer-blocks 2 --w_decay 0.00
 
 ## Physiome-ODE
 
-To reproduce the result for the Physiome-ODE[2] dataset 
+To run IMTS-Mixer on the Physiome-ODE[2] datasets you first have to obtain the Physiome-ODE datasets from zenodo: https://zenodo.org/records/11492058
+Detailed descriptions on how to recreate the datasets from scratch are given here: https://github.com/kloetergensc/Physiome-ODE.
+We give an example on how to run IMTS mixer on one of the datasets (borghans_dupont_goldbeter_1997a):
+
+```bash
+python run_imts_mixer_physiomeode.py --dataset borghans_dupont_goldbeter_1997a --fold 0
+```
 
 ## 📚 Reference
 [1] Zhang, W., Yin, C., Liu, H., Zhou, X., & Xiong, H. (2024).
 Irregular Multivariate Time Series Forecasting: A Transformable Patching Graph Neural Networks Approach.
 In Forty-First International Conference on Machine Learning (ICML 2024).
+
+[2]Klötergens, C.; Yalavarthi, V. K.; Scholz, R.; Stubbemann, M.; Born, S.; and Schmidt-Thieme, L. 2024. 
+Physiome-ODE: A Benchmark for Irregularly Sampled Multivariate Time-Series Forecasting Based on Biological ODEs.
+In The Thirteenth International Conference on Learning Representations.
