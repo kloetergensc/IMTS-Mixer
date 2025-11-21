@@ -1,8 +1,5 @@
 # IMTS-Mixer
 
-[![Paper](https://img.shields.io/badge/Paper-AAAI%202026-blue)](https://github.com/your-username/IMTS-Mixer)
-[![Python](https://img.shields.io/badge/Python-3.11-green)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 Official implementation of the paper:  
 **Mixing It Up: Exploring Mixer Networks for Irregular Multivariate Time Series Forecasting**, 
