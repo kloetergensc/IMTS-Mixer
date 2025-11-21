@@ -6,7 +6,7 @@
 
 Official implementation of the paper:  
 **Mixing It Up: Exploring Mixer Networks for Irregular Multivariate Time Series Forecasting**, 
-submitted to **AAAI 2026**.
+submitted to **PAKDD 2026**.
 
 <div align="center">
   <img src="figures/imtsmixer.png" alt="IMTS-Mixer Architecture" width="600"/>
