@@ -3,7 +3,8 @@
 
 Official implementation of the paper:  
 **Mixing It Up: Exploring Mixer Networks for Irregular Multivariate Time Series Forecasting**, 
-submitted to **PAKDD 2026**.
+
+https://arxiv.org/abs/2502.11816
 
 <div align="center">
   <img src="figures/imtsmixer.png" alt="IMTS-Mixer Architecture" width="600"/>
@@ -226,3 +227,12 @@ python run_imts_mixer_pmau.py \
 [1] Zhang, W., Yin, C., Liu, H., Zhou, X., & Xiong, H. (2024). Irregular Multivariate Time Series Forecasting: A Transformable Patching Graph Neural Networks Approach. In *Proceedings of the 41st International Conference on Machine Learning (ICML 2024)*.
 
 [2] Klötergens, C., Yalavarthi, V. K., Scholz, R., Stubbemann, M., Born, S., & Schmidt-Thieme, L. (2024). Physiome-ODE: A Benchmark for Irregularly Sampled Multivariate Time-Series Forecasting Based on Biological ODEs. In *The Thirteenth International Conference on Learning Representations*.
+
+When used please cite:
+
+@article{klotergens2025imts,
+  title={IMTS-Mixer: Mixer-Networks for Irregular Multivariate Time Series Forecasting},
+  author={Kl{\"o}tergens, Christian and Dernedde, Tim and Schmidt-Thieme, Lars},
+  journal={arXiv preprint arXiv:2502.11816},
+  year={2025}
+}
