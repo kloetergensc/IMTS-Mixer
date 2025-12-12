@@ -228,8 +228,11 @@ python run_imts_mixer_pmau.py \
 
 [2] Klötergens, C., Yalavarthi, V. K., Scholz, R., Stubbemann, M., Born, S., & Schmidt-Thieme, L. (2024). Physiome-ODE: A Benchmark for Irregularly Sampled Multivariate Time-Series Forecasting Based on Biological ODEs. In *The Thirteenth International Conference on Learning Representations*.
 
-When used please cite:
+## 📝 Citation
 
+If you use IMTS-Mixer in your research, please cite the following paper:
+
+```bibtex
 @article{klotergens2025imts,
   title={IMTS-Mixer: Mixer-Networks for Irregular Multivariate Time Series Forecasting},
   author={Kl{\"o}tergens, Christian and Dernedde, Tim and Schmidt-Thieme, Lars},
