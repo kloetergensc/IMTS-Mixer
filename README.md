@@ -3,6 +3,7 @@
 
 Official implementation of the paper:  
 **Mixing It Up: Exploring Mixer Networks for Irregular Multivariate Time Series Forecasting**, 
+Published at PAKDD
 
 https://arxiv.org/abs/2502.11816
 
@@ -236,6 +237,7 @@ If you use IMTS-Mixer in your research, please cite the following paper:
 @article{klotergens2025imts,
   title={IMTS-Mixer: Mixer-Networks for Irregular Multivariate Time Series Forecasting},
   author={Kl{\"o}tergens, Christian and Dernedde, Tim and Schmidt-Thieme, Lars},
-  journal={arXiv preprint arXiv:2502.11816},
-  year={2025}
+  booktitle={Pacific-Asia Conference on Knowledge Discovery and Data Mining},
+  year={2026}
+  organization={Springer}
 }
